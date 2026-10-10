@@ -11,3 +11,8 @@ An automated financial data pipeline combining Python, MySQL, and Power BI to an
 ## Key Technical Decisions
 * **Upstream Processing:** Heavy calculations (rolling averages and conditional action logic) were performed upstream in Python and SQL rather than through complex DAX measures, keeping the Power BI file lightweight and responsive.
 * **Warm-Up Window Handling:** Filtered out records prior to complete 40-day calculation availability (`WHERE sma_40 IS NOT NULL`) to ensure visual alignment across all trend lines.
+
+## Demonstration
+
+https://github.com/user-attachments/assets/24a65fa5-e338-49a0-a3e0-be0e7f50aa53
+
